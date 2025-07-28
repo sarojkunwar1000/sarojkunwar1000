@@ -1,139 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ne">
 <head>
   <meta charset="UTF-8" />
-  <title>Saroj Kunwar's Official Zone - Big Size</title>
+  <title>Saroj Kunwar's Nepali Style Site 🎶</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
     body {
-      background-color: #fffaf0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f8f0e3 0%, #fceabb 100%);
+      font-family: 'Mukta', sans-serif;
+      color: #5b3a29;
       text-align: center;
-      padding: 50px;
-      color: #2d3436;
+      padding: 50px 30px;
     }
 
     h1 {
       font-size: 4.5em;
-      color: #d63031;
-      margin-bottom: 10px;
+      color: #b33939;
+      text-shadow: 1.5px 1.5px 2px #6b1e1e;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
 
     h2 {
       font-size: 3em;
-      color: #0984e3;
+      color: #833471;
       margin-top: 60px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-style: italic;
     }
 
     p {
       font-size: 2em;
       margin: 10px 0;
+      font-weight: 500;
     }
 
     img {
-      width: 350px;
-      height: 350px;
+      width: 360px;
+      height: 360px;
       border-radius: 50%;
       margin: 30px 0;
       object-fit: cover;
+      border: 6px solid #b33939;
+      box-shadow: 0 0 25px rgba(179, 57, 57, 0.6);
     }
 
     .joke-box {
-      background-color: #ffeaa7;
-      border-radius: 15px;
-      padding: 40px;
-      font-size: 2em;
-      margin: 40px auto;
+      background-color: #fff0d1;
+      border-radius: 20px;
+      padding: 45px 30px;
+      font-size: 2.2em;
+      margin: 50px auto;
       width: 90%;
-      max-width: 800px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+      box-shadow: 0 0 15px rgba(183, 105, 105, 0.3);
+      font-weight: 600;
+      color: #4b2e2e;
     }
 
     button, .social-btn {
-      padding: 18px 45px;
-      background-color: #00b894;
-      color: white;
-      font-size: 1.8em;
+      padding: 20px 55px;
+      background-color: #833471;
+      color: #fceabb;
+      font-size: 2em;
       border: none;
-      border-radius: 12px;
+      border-radius: 18px;
       cursor: pointer;
-      margin: 20px 15px;
+      margin: 25px 20px;
       text-decoration: none;
       display: inline-block;
-      transition: background-color 0.3s;
+      transition: background-color 0.4s ease;
+      font-weight: 700;
+      box-shadow: 0 5px 15px rgba(131, 52, 113, 0.6);
     }
 
     button:hover, .social-btn:hover {
-      background-color: #019875;
+      background-color: #b33970;
+      box-shadow: 0 8px 20px rgba(179, 57, 112, 0.8);
     }
 
     .social-section {
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .time-box {
-      background-color: #dfe6e9;
-      border-radius: 15px;
-      padding: 25px;
-      width: 400px;
-      margin: 40px auto;
-      font-size: 1.8em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: #ffe1ad;
+      border-radius: 25px;
+      padding: 30px 25px;
+      width: 420px;
+      margin: 50px auto;
+      font-size: 2em;
+      box-shadow: 0 0 20px rgba(131, 52, 113, 0.25);
+      font-weight: 700;
+      color: #582626;
     }
 
     .time-title {
-      font-weight: bold;
-      margin-bottom: 12px;
-      color: #6c5ce7;
+      margin-bottom: 18px;
+      color: #832d3c;
+      font-weight: 800;
+      text-shadow: 1px 1px 3px #bb6877;
     }
 
     .friends, .gf {
-      font-size: 1.8em;
-      margin-top: 30px;
-      color: #2d3436;
+      font-size: 2em;
+      margin-top: 40px;
+      color: #6b2e2e;
+      font-weight: 600;
     }
 
     .friends span {
       display: inline-block;
-      background: #ffeaa7;
-      margin: 10px 15px;
-      padding: 15px 25px;
-      border-radius: 15px;
-      font-weight: 600;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #fff0d1;
+      margin: 15px 20px;
+      padding: 20px 40px;
+      border-radius: 25px;
+      font-weight: 700;
+      box-shadow: 0 0 15px rgba(183, 105, 105, 0.4);
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .friends span:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(179, 57, 57, 0.6);
     }
 
     .gf {
-      background-color: #fab1a0;
+      background-color: #f2c6c6;
       display: inline-block;
-      padding: 20px 40px;
-      border-radius: 20px;
-      margin-top: 30px;
-      font-weight: bold;
-      color: #d63031;
-      box-shadow: 0 0 12px rgba(214, 48, 49, 0.5);
+      padding: 25px 60px;
+      border-radius: 30px;
+      margin-top: 40px;
+      font-weight: 800;
+      color: #8b1a1a;
+      box-shadow: 0 0 20px rgba(179, 57, 57, 0.7);
+      font-style: italic;
+    }
+
+    /* Scrollbar color for fun */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #fceabb;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #b33939;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
+
+  <h1>स्वागत छ मेरो वेबसाइटमा</h1>
   <p><strong>Saroj Kunwar</strong> | Class 10</p>
   <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar" />
 
   <div class="joke-box" id="joke">
-    😂 Click the button to see a funny Nepali joke!
+    😂 जोक्स सुन्न तल क्लिक गर्नुहोस्!
   </div>
-  <button onclick="tellJoke()">Tell me a joke</button>
+  <button onclick="tellJoke()">जोक्स सुनाउनुहोस्</button>
 
-  <h2>⏰ Time Zone</h2>
+  <h2>⏰ समय क्षेत्र</h2>
   <div class="time-box">
-    <div class="time-title">Nepali Time (Kathmandu)</div>
-    <div id="nepali-time">Loading...</div>
-    <div class="time-title" style="margin-top: 15px;">Dubai Time</div>
-    <div id="dubai-time">Loading...</div>
+    <div class="time-title">नेपाल समय (काठमाडौं)</div>
+    <div id="nepali-time">लोड हुँदैछ...</div>
+    <div class="time-title" style="margin-top: 20px;">दुबई समय</div>
+    <div id="dubai-time">लोड हुँदैछ...</div>
   </div>
 
-  <h2>🔗 My Social Links</h2>
+  <h2>🔗 मेरा सामाजिक लिङ्कहरु</h2>
   <div class="social-section">
     <a class="social-btn" href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yOyIZpOI54&_r=1" target="_blank">🎵 TikTok</a>
     <a class="social-btn" href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" target="_blank">📸 Instagram</a>
@@ -141,24 +179,30 @@
     <a class="social-btn" href="https://www.facebook.com/share/15yWKm8DbU/" target="_blank">📘 Facebook 2</a>
   </div>
 
-  <div class="gf">💖 My Girlfriend: Luri Don</div>
+  <div class="gf">💖 मेरो प्रेमिका: Luri Don</div>
 
-  <h2>👬 My Best Friends</h2>
+  <h2>👬 मेरा साथीहरू</h2>
   <div class="friends">
     <span>🧑‍🤝‍🧑 Saroj Dhungel</span>
     <span>🧑‍🤝‍🧑 Himal Bhatt</span>
     <span>🧑‍🤝‍🧑 Biswash Chaudhary</span>
   </div>
 
+  <!-- Background Nepali Song -->
+  <audio autoplay loop controls style="margin-top:40px; width: 80%; max-width: 700px;">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
   <script>
     const jokes = [
-      "Miss: Saroj, why are you late? Saroj: Miss, I was early, but then I waited for the bell to ring. 😂",
-      "Goru: Timi doctor ho? Doctor: Ho. Goru: Ta mobile ma YouTube herirathis ta! 😆",
-      "Dad: Why are your exam marks low? Saroj: Because I sit beside a lazy friend and I don’t want to disturb him. 🤣",
-      "Buff: Ma ta smart xu. Goru: Kasto? Buff: Ma ta iPhone sanga selfie khichxu. 📱🐃",
-      "Sir: Homework? Student: Sir, online padhera download garna birse! 🤪",
-      "Friend: Tero brain kaha ho? Saroj: Online ma... search garirako xu! 🧠😂",
-      "Miss: Why didn’t you come yesterday? Student: I was abducted by aliens for science! 👽🤓"
+      "Miss: Saroj, किन ढिलो आयौ? Saroj: Miss, म चाँडै आएँ, तर बेल कुर्न बसेँ। 😂",
+      "गोरु: तिमी डाक्टर हौ? डाक्टर: हो। गोरु: त मोबाइलमा YouTube हेरिरहेको छस्। 😆",
+      "बाबु: तिम्रा परीक्षा नम्बर किन कम आए? Saroj: किनकी म सुस्त साथीको छेउमा बसेँ र उनलाई नडिस्टर्ब गर्न चाहिन। 🤣",
+      "बफ: म स्मार्ट छु। गोरु: कस्तो? बफ: म iPhone सँग सेल्फी खिच्छु। 📱🐃",
+      "सर: गृहकार्य? विद्यार्थी: सर, अनलाइन पढेर डाउनलोड गर्न बिर्सेँ! 🤪",
+      "साथी: तेरो दिमाग कहाँ छ? Saroj: अनलाइनमा... खोज्दै छु! 🧠😂",
+      "मिस: किन हिजो आएनौ? विद्यार्थी: म विज्ञानको लागि एलियनले अपहरण गरे! 👽🤓"
     ];
 
     function tellJoke() {
@@ -169,10 +213,12 @@
     function updateTime() {
       const now = new Date();
 
+      // Nepali Time GMT+5:45
       const nepaliOffset = 5 * 60 + 45;
       const nepali = new Date(now.getTime() + (nepaliOffset - now.getTimezoneOffset()) * 60000);
       document.getElementById("nepali-time").innerText = nepali.toLocaleTimeString();
 
+      // Dubai Time GMT+4
       const dubaiOffset = 4 * 60;
       const dubai = new Date(now.getTime() + (dubaiOffset - now.getTimezoneOffset()) * 60000);
       document.getElementById("dubai-time").innerText = dubai.toLocaleTimeString();
