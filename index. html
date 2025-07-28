@@ -1,106 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Saroj Kunwar - Personal Website</title>
+  <meta charset="UTF-8" />
+  <title>Saroj Kunwar's Official Zone - Big Size</title>
   <style>
     body {
+      background-color: #fffaf0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #fce4ec);
       text-align: center;
       padding: 50px;
-      color: #333;
+      color: #2d3436;
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 4.5em;
+      color: #d63031;
       margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 3em;
+      color: #0984e3;
+      margin-top: 60px;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 18px;
-      margin: 8px 0;
+      font-size: 2em;
+      margin: 10px 0;
     }
 
-    .profile-pic {
-      width: 180px;
-      height: 180px;
+    img {
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
-      border: 5px solid #ff4081;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      margin-top: 20px;
+      margin: 30px 0;
       object-fit: cover;
     }
 
-    .social-links {
-      margin-top: 30px;
+    .joke-box {
+      background-color: #ffeaa7;
+      border-radius: 15px;
+      padding: 40px;
+      font-size: 2em;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
 
-    .social-links a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      text-decoration: none;
+    button, .social-btn {
+      padding: 18px 45px;
+      background-color: #00b894;
       color: white;
-      background-color: #4267B2;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s;
+      font-size: 1.8em;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin: 20px 15px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
     }
 
-    .social-links a.tiktok {
-      background-color: #000000;
+    button:hover, .social-btn:hover {
+      background-color: #019875;
     }
 
-    .social-links a:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
-
-    .section {
+    .social-section {
       margin-top: 40px;
     }
 
-    .section h2 {
-      color: #d81b60;
-      margin-bottom: 10px;
+    .time-box {
+      background-color: #dfe6e9;
+      border-radius: 15px;
+      padding: 25px;
+      width: 400px;
+      margin: 40px auto;
+      font-size: 1.8em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #777;
+    .time-title {
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #6c5ce7;
+    }
+
+    .friends, .gf {
+      font-size: 1.8em;
+      margin-top: 30px;
+      color: #2d3436;
+    }
+
+    .friends span {
+      display: inline-block;
+      background: #ffeaa7;
+      margin: 10px 15px;
+      padding: 15px 25px;
+      border-radius: 15px;
+      font-weight: 600;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .gf {
+      background-color: #fab1a0;
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 20px;
+      margin-top: 30px;
+      font-weight: bold;
+      color: #d63031;
+      box-shadow: 0 0 12px rgba(214, 48, 49, 0.5);
     }
   </style>
 </head>
 <body>
   <h1>Welcome to My Website</h1>
-  <p>My name is Saroj Kunwar.</p>
-  <p>I am passionate about creativity and learning new things.</p>
-  <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar" class="profile-pic">
+  <p><strong>Saroj Kunwar</strong> | Class 10</p>
+  <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar" />
 
-  <div class="social-links">
-    <a href="https://www.facebook.com/share/16fX2F778y/" target="_blank">Facebook</a>
-    <a href="https://www.tiktok.com/@sarojkunwar18" class="tiktok" target="_blank">TikTok</a>
+  <div class="joke-box" id="joke">
+    😂 Click the button to see a funny Nepali joke!
+  </div>
+  <button onclick="tellJoke()">Tell me a joke</button>
+
+  <h2>⏰ Time Zone</h2>
+  <div class="time-box">
+    <div class="time-title">Nepali Time (Kathmandu)</div>
+    <div id="nepali-time">Loading...</div>
+    <div class="time-title" style="margin-top: 15px;">Dubai Time</div>
+    <div id="dubai-time">Loading...</div>
   </div>
 
-  <div class="section">
-    <h2>My Friend</h2>
-    <p>My best friend is <strong>Nabin</strong>. He is supportive, funny, and always ready to explore new things with me!</p>
+  <h2>🔗 My Social Links</h2>
+  <div class="social-section">
+    <a class="social-btn" href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yOyIZpOI54&_r=1" target="_blank">🎵 TikTok</a>
+    <a class="social-btn" href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" target="_blank">📸 Instagram</a>
+    <a class="social-btn" href="https://www.facebook.com/share/16fX2F778y/" target="_blank">📘 Facebook 1</a>
+    <a class="social-btn" href="https://www.facebook.com/share/15yWKm8DbU/" target="_blank">📘 Facebook 2</a>
   </div>
 
-  <div class="section">
-    <h2>My Education</h2>
-    <p>I am currently pursuing my education with a deep interest in technology, design, and learning new skills every day.</p>
+  <div class="gf">💖 My Girlfriend: Luri Don</div>
+
+  <h2>👬 My Best Friends</h2>
+  <div class="friends">
+    <span>🧑‍🤝‍🧑 Saroj Dhungel</span>
+    <span>🧑‍🤝‍🧑 Himal Bhatt</span>
+    <span>🧑‍🤝‍🧑 Biswash Chaudhary</span>
   </div>
 
-  <div class="section">
-    <h2>My Hobbies</h2>
-    <p>I love photo editing, playing games, learning web development, and spending quality time with friends like Nabin.</p>
-  </div>
+  <script>
+    const jokes = [
+      "Miss: Saroj, why are you late? Saroj: Miss, I was early, but then I waited for the bell to ring. 😂",
+      "Goru: Timi doctor ho? Doctor: Ho. Goru: Ta mobile ma YouTube herirathis ta! 😆",
+      "Dad: Why are your exam marks low? Saroj: Because I sit beside a lazy friend and I don’t want to disturb him. 🤣",
+      "Buff: Ma ta smart xu. Goru: Kasto? Buff: Ma ta iPhone sanga selfie khichxu. 📱🐃",
+      "Sir: Homework? Student: Sir, online padhera download garna birse! 🤪",
+      "Friend: Tero brain kaha ho? Saroj: Online ma... search garirako xu! 🧠😂",
+      "Miss: Why didn’t you come yesterday? Student: I was abducted by aliens for science! 👽🤓"
+    ];
 
-  <div class="footer">
-    &copy; 2025 Saroj Kunwar. All rights reserved.
-  </div>
+    function tellJoke() {
+      const joke = jokes[Math.floor(Math.random() * jokes.length)];
+      document.getElementById("joke").innerText = joke;
+    }
+
+    function updateTime() {
+      const now = new Date();
+
+      const nepaliOffset = 5 * 60 + 45;
+      const nepali = new Date(now.getTime() + (nepaliOffset - now.getTimezoneOffset()) * 60000);
+      document.getElementById("nepali-time").innerText = nepali.toLocaleTimeString();
+
+      const dubaiOffset = 4 * 60;
+      const dubai = new Date(now.getTime() + (dubaiOffset - now.getTimezoneOffset()) * 60000);
+      document.getElementById("dubai-time").innerText = dubai.toLocaleTimeString();
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
 </body>
 </html>
