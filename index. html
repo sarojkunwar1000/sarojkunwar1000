@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ne">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Saroj Kunwar's Nepali Style Site 🎶</title>
@@ -139,7 +139,7 @@
       font-style: italic;
     }
 
-    /* Scrollbar color for fun */
+    /* Scrollbar color */
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -154,24 +154,24 @@
 </head>
 <body>
 
-  <h1>स्वागत छ मेरो वेबसाइटमा</h1>
+  <h1>Welcome to My Website</h1>
   <p><strong>Saroj Kunwar</strong> | Class 10</p>
   <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar" />
 
   <div class="joke-box" id="joke">
-    😂 जोक्स सुन्न तल क्लिक गर्नुहोस्!
+    😂 Click the button below to hear a funny Nepali joke!
   </div>
-  <button onclick="tellJoke()">जोक्स सुनाउनुहोस्</button>
+  <button onclick="tellJoke()">Tell me a joke</button>
 
-  <h2>⏰ समय क्षेत्र</h2>
+  <h2>⏰ Time Zones</h2>
   <div class="time-box">
-    <div class="time-title">नेपाल समय (काठमाडौं)</div>
-    <div id="nepali-time">लोड हुँदैछ...</div>
-    <div class="time-title" style="margin-top: 20px;">दुबई समय</div>
-    <div id="dubai-time">लोड हुँदैछ...</div>
+    <div class="time-title">Nepali Time (Kathmandu)</div>
+    <div id="nepali-time">Loading...</div>
+    <div class="time-title" style="margin-top: 20px;">Dubai Time</div>
+    <div id="dubai-time">Loading...</div>
   </div>
 
-  <h2>🔗 मेरा सामाजिक लिङ्कहरु</h2>
+  <h2>🔗 My Social Links</h2>
   <div class="social-section">
     <a class="social-btn" href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yOyIZpOI54&_r=1" target="_blank">🎵 TikTok</a>
     <a class="social-btn" href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" target="_blank">📸 Instagram</a>
@@ -179,9 +179,9 @@
     <a class="social-btn" href="https://www.facebook.com/share/15yWKm8DbU/" target="_blank">📘 Facebook 2</a>
   </div>
 
-  <div class="gf">💖 मेरो प्रेमिका: Luri Don</div>
+  <div class="gf">💖 My Girlfriend: Luri Don</div>
 
-  <h2>👬 मेरा साथीहरू</h2>
+  <h2>👬 My Best Friends</h2>
   <div class="friends">
     <span>🧑‍🤝‍🧑 Saroj Dhungel</span>
     <span>🧑‍🤝‍🧑 Himal Bhatt</span>
@@ -196,13 +196,13 @@
 
   <script>
     const jokes = [
-      "Miss: Saroj, किन ढिलो आयौ? Saroj: Miss, म चाँडै आएँ, तर बेल कुर्न बसेँ। 😂",
-      "गोरु: तिमी डाक्टर हौ? डाक्टर: हो। गोरु: त मोबाइलमा YouTube हेरिरहेको छस्। 😆",
-      "बाबु: तिम्रा परीक्षा नम्बर किन कम आए? Saroj: किनकी म सुस्त साथीको छेउमा बसेँ र उनलाई नडिस्टर्ब गर्न चाहिन। 🤣",
-      "बफ: म स्मार्ट छु। गोरु: कस्तो? बफ: म iPhone सँग सेल्फी खिच्छु। 📱🐃",
-      "सर: गृहकार्य? विद्यार्थी: सर, अनलाइन पढेर डाउनलोड गर्न बिर्सेँ! 🤪",
-      "साथी: तेरो दिमाग कहाँ छ? Saroj: अनलाइनमा... खोज्दै छु! 🧠😂",
-      "मिस: किन हिजो आएनौ? विद्यार्थी: म विज्ञानको लागि एलियनले अपहरण गरे! 👽🤓"
+      "Miss: Saroj, why are you late? Saroj: Miss, I was early, but then I waited for the bell to ring. 😂",
+      "Goru: Are you a doctor? Doctor: Yes. Goru: Then why are you watching YouTube on your phone? 😆",
+      "Dad: Why are your exam marks low? Saroj: Because I sit beside a lazy friend and I don’t want to disturb him. 🤣",
+      "Buff: I am smart. Goru: How? Buff: I take selfies with iPhone. 📱🐃",
+      "Sir: Homework? Student: Sir, I forgot to download after studying online! 🤪",
+      "Friend: Where is your brain? Saroj: Online... searching for it! 🧠😂",
+      "Miss: Why didn’t you come yesterday? Student: I was abducted by aliens for science! 👽🤓"
     ];
 
     function tellJoke() {
